@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Providers;
+namespace DailyBlog\Providers;
 
 use Illuminate\Support\ServiceProvider;
 
