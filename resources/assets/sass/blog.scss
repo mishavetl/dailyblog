@@ -1,0 +1,30 @@
+.blog-page {
+    text-align: center;
+}
+
+.blog-page .posts {
+    list-style: none;
+}
+
+.blog-page .post {
+    padding: 40px;
+}
+
+.blog-page .post i {
+    color: rgb(135, 135, 135);
+}
+
+.blog-page .post a {
+    display: block;
+    color: rgb(73, 252, 57);
+}
+
+.blog-page .post a:hover {
+    display: block;
+    color: rgb(35, 251, 6);
+    text-decoration: none;
+}
+
+.blog-page .post p {
+    margin-top: 30px;
+}
