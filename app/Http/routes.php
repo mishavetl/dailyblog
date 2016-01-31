@@ -14,12 +14,13 @@
 Route::group(['middleware' => 'web'], function () {
     Route::auth();
 
-    Route::resource('/', 'BlogController',[
-        'only' => ['index']
-    ]);
-
     Route::get('/about', function () {
         return view('about');
 
     });
+
+    Route::resource('/', 'BlogController',[
+        'only' => ['index']
+    ]);
+
 });

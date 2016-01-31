@@ -29,14 +29,14 @@ class PostTableSeeder extends Seeder
         DB::table('posts')->insert([
             'title' => 'Bootstrap framework',
             'published_at' => Carbon::now()->addDays(10)->toDateTimeString(),
-            'url' => 'getbootstrap.com',
+            'url' => 'https://getbootstrap.com',
             'body' => 'Bootstraps is really powerful tool for builing websites quickly.',
         ]);
 
         DB::table('posts')->insert([
             'title' => 'Sass framework',
             'published_at' => Carbon::now()->toDateTimeString(),
-            'url' => 'sass-lang.com',
+            'url' => 'http://sass-lang.com',
             'body' => 'Sass is another great css language. It includes a lot of great features',
         ]);
     }

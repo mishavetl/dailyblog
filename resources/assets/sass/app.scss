@@ -1,8 +1,16 @@
 // @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+
+@import "mixins";
 @import "navbar";
 @import "about";
 @import "blog";
+@import "login";
+@import "register";
 
 span.glyphicon {
     margin-right: 5px;
+}
+
+a:focus {
+    outline: none;
 }

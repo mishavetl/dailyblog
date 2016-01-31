@@ -10,7 +10,7 @@
                     <h2>{{ $post->title }}</h2>
                     <i>{{ $post->published_at }}</i>
                     @if($post->url)
-                        <a href="{{ $post->url }}">{{ $post->url }}</a>
+                        <a target="_blank" href="{{ $post->url }}">{{ $post->url }}</a>
                     @endif
                     <p>
                         {{ $post->body }}

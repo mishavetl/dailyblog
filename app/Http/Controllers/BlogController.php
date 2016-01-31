@@ -13,9 +13,11 @@ use Carbon\Carbon;
 
 class BlogController extends Controller
 {
-    public function __construct()
+    protected $posts;
+
+    public function __construct(Post $posts)
     {
-        $this->middleware('auth');
+        $this->posts = $posts;
     }
 
     public function index()
