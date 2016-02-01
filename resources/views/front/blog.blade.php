@@ -19,5 +19,6 @@
                 <hr class="clearfix" />
             @endforeach
         </ul>
+        {!! $posts->links() !!}
     </div>
 @endsection

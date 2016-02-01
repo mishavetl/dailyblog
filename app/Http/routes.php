@@ -19,7 +19,13 @@ Route::group(['middleware' => 'web'], function () {
 
     });
 
-    Route::resource('/', 'BlogController',[
+    Route::get('/back', 'Back\DashboardController@index');
+
+    Route::resource('/back/posts', 'Back\PostController', [
+        'except' => ['show'],
+    ]);
+
+    Route::resource('/', 'BlogController', [
         'only' => ['index']
     ]);
 

@@ -39,5 +39,12 @@ class PostTableSeeder extends Seeder
             'url' => 'http://sass-lang.com',
             'body' => 'Sass is another great css language. It includes a lot of great features',
         ]);
+
+        DB::table('posts')->insert([
+            'title' => 'Admin interface',
+            'published_at' => Carbon::now()->toDateTimeString(),
+            'url' => 'http://dailyblog.herokuapp.com',
+            'body' => 'Great Admin Interface',
+        ]);
     }
 }

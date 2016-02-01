@@ -1,0 +1,1 @@
+{"version":3,"sources":["admin.coffee"],"names":[],"mappings":"AAAA;EAAA,CAAA,CAAE,eAAF,CAAkB,CAAC,EAAnB,CAAsB,OAAtB,EAA+B,SAAA;WAC3B,QAAQ,CAAC,QAAT,GAAoB,CAAA,CAAE,IAAF,CAAO,CAAC,IAAR,CAAa,MAAb;EADO,CAA/B;AAAA","file":"admin.js","sourcesContent":["$('tr[data-href]').on 'click', ->\n    document.location = $(this).data('href')\n"],"sourceRoot":"/source/"}

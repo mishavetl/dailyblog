@@ -1,0 +1,28 @@
+{
+  "name": "daily-blog",
+  "description": "Daily Blog App",
+  "main": "",
+  "authors": [
+    "Michael Vietluzhskih <mishavetl@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "daily",
+    "blog",
+    "app"
+  ],
+  "homepage": "https://github.com/mishavetl/dailyblog",
+  "moduleType": [],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/components/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "eonasdan-bootstrap-datetimepicker": "~4.17.37"
+  }
+}
