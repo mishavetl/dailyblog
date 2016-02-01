@@ -12,11 +12,18 @@
 */
 
 Route::group(['middleware' => 'web'], function () {
-    Route::auth();
-
     Route::get('/about', function () {
         return view('about');
 
+    });
+
+    Route::get('/login', 'Auth\AuthController@getLogin');
+    Route::post('/login', 'Auth\AuthController@postLogin');
+    // Route::get('/logout', 'Auth\AuthController@getLogout');
+    Route::get('/logout', function () {
+        Auth::logout();
+
+        return redirect('/');
     });
 
     Route::get('/back', 'Back\DashboardController@index');
@@ -28,5 +35,4 @@ Route::group(['middleware' => 'web'], function () {
     Route::resource('/', 'BlogController', [
         'only' => ['index']
     ]);
-
 });

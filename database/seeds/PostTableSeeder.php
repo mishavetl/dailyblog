@@ -43,8 +43,20 @@ class PostTableSeeder extends Seeder
         DB::table('posts')->insert([
             'title' => 'Admin interface',
             'published_at' => Carbon::now()->toDateTimeString(),
+            'body' => 'Great Admin Interface',
+        ]);
+
+        DB::table('posts')->insert([
+            'title' => 'We are closing our blog',
+            'published_at' => Carbon::now()->addMinute()->toDateTimeString(),
             'url' => 'http://dailyblog.herokuapp.com',
             'body' => 'Great Admin Interface',
+        ]);
+
+        DB::table('posts')->insert([
+            'title' => 'Admin user',
+            'published_at' => Carbon::now()->subMinute()->toDateTimeString(),
+            'body' => 'email: admin@dailyblog.com password: 12345',
         ]);
     }
 }
