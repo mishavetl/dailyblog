@@ -1,5 +1,7 @@
 @extends('layouts.app')
 
+@section('page', 'Login')
+
 @section('content')
 <div class="container login-page">
     <h1>Login</h1>
